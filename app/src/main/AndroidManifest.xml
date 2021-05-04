@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.STravel">
-        <activity android:name=".ui.RegisterActivity"></activity>
+        <activity android:name=".ui.RegisterFragment"></activity>
         <activity android:name=".ui.LoginFragment" />
         <activity android:name=".MainActivity" />
     </application>
