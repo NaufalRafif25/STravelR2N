@@ -49,7 +49,7 @@
         app:layout_constraintTop_toTopOf="@id/button2"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/maskapai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -66,10 +66,10 @@
         android:layout_marginTop="30dp"
         app:srcCompat="@drawable/garuda"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView2"/>
+        app:layout_constraintTop_toBottomOf="@id/maskapai"/>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textMaskapai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -78,52 +78,52 @@
         app:layout_constraintTop_toTopOf="@id/imageView2"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textHargaMaskapai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Harga :"
         app:layout_constraintStart_toEndOf="@id/imageView2"
-        app:layout_constraintTop_toBottomOf="@id/textView3" />
+        app:layout_constraintTop_toBottomOf="@id/textMaskapai" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textTujuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Tujuan :"
         app:layout_constraintStart_toEndOf="@id/imageView2"
-        app:layout_constraintTop_toBottomOf="@id/textView4" />
+        app:layout_constraintTop_toBottomOf="@id/textHargaMaskapai" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/editTextMaskapai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Garuda Air"
-        app:layout_constraintStart_toEndOf="@id/textView3"
-        app:layout_constraintTop_toTopOf="@id/textView3" />
+        app:layout_constraintStart_toEndOf="@id/textMaskapai"
+        app:layout_constraintTop_toTopOf="@id/textMaskapai" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/editTextHarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Rp1,200,000"
-        app:layout_constraintStart_toEndOf="@id/textView4"
-        app:layout_constraintTop_toTopOf="@id/textView4" />
+        app:layout_constraintStart_toEndOf="@id/textHargaMaskapai"
+        app:layout_constraintTop_toTopOf="@id/textHargaMaskapai" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/editTextTujuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Lombok"
-        app:layout_constraintStart_toEndOf="@id/textView5"
-        app:layout_constraintTop_toTopOf="@id/textView5"/>
+        app:layout_constraintStart_toEndOf="@id/textTujuan"
+        app:layout_constraintTop_toTopOf="@id/textTujuan"/>
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/hotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -140,10 +140,10 @@
         android:layout_marginTop="30dp"
         app:srcCompat="@drawable/hotelLombok"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"/>
+        app:layout_constraintTop_toBottomOf="@+id/hotel"/>
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textNamaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -152,49 +152,49 @@
         app:layout_constraintTop_toTopOf="@id/imageView4"/>
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textLokasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Lokasi"
         app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textView17"/>
+        app:layout_constraintTop_toBottomOf="@id/textNamaHotel"/>
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textHargaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Harga"
         app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textView18" />
+        app:layout_constraintTop_toBottomOf="@id/textLokasi" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/editTextNamaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grand Lombok"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@id/textView17"
-        app:layout_constraintTop_toTopOf="@id/textView17"
+        app:layout_constraintStart_toEndOf="@id/textNamaHotel"
+        app:layout_constraintTop_toTopOf="@id/textNamaHotel"
         tools:layout_editor_absoluteY="513dp" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/editTextLokasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Lombok"
-        app:layout_constraintStart_toEndOf="@id/textView18"
-        app:layout_constraintTop_toTopOf="@id/textView18"/>
+        app:layout_constraintStart_toEndOf="@id/textLokasi"
+        app:layout_constraintTop_toTopOf="@id/textLokasi"/>
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/editTextHargaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Rp3,000,000/malam"
-        app:layout_constraintStart_toEndOf="@id/textView19"
-        app:layout_constraintTop_toTopOf="@id/textView19"/>
+        app:layout_constraintStart_toEndOf="@id/textHargaHotel"
+        app:layout_constraintTop_toTopOf="@id/textHargaHotel"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
