@@ -9,118 +9,110 @@
         android:id="@+id/judulSTravel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
         android:text="STravel"
         android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-
-        android:id="@+id/judulLogin"
+        android:id="@+id/judulRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:text="Register"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/judulSTravel" />
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:text="Name"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/judulLogin" />
+        app:layout_constraintStart_toStartOf="@id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/judulRegister" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextName"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_et_primary"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="6dp"
         android:text="Email"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        app:layout_constraintStart_toStartOf="@id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextEmail"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/bg_et_primary"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <TextView
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
         android:layout_marginTop="12dp"
         android:text="Password"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="92dp"
         android:background="@drawable/bg_et_primary"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <TextView
         android:id="@+id/noteTextRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
         android:text="have an account?"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Register"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/noteTextRegister"
+        app:layout_constraintEnd_toEndOf="@id/editTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -132,7 +124,6 @@
         android:text="Register"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/noteTextRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>
