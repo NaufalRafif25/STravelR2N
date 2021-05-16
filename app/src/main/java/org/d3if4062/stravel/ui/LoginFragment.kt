@@ -15,7 +15,7 @@ class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLoginBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        Log.d("LoginFragment", "bagian error")
+        Log.d("LoginFragment", "bagian login fragment error")
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         binding.buttonLogin.setOnClickListener { login() }
         return binding.root
