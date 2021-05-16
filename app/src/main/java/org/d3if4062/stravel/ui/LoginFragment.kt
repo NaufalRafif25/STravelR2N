@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import org.d3if4062.stravel.R
 import org.d3if4062.stravel.databinding.FragmentLoginBinding
 
@@ -18,6 +19,11 @@ class LoginFragment : Fragment() {
         Log.d("LoginFragment", "bagian login fragment error")
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         binding.buttonLogin.setOnClickListener { login() }
+        binding.buttonLogin.setOnClickListener { view: View-> view.findNavController().navigate(
+                if (login() == true) {
+                    R.id.action_loginFragment_to_homeUtamaFragment
+                }
+        ) }
         return binding.root
     }
 

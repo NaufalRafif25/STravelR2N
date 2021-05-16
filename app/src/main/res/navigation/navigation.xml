@@ -9,5 +9,14 @@
         android:id="@+id/loginFragment"
         android:name="org.d3if4062.stravel.ui.LoginFragment"
         android:label="LoginFragment"
-        tools:layout="@layout/fragment_login"/>
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeUtamaFragment"
+            app:destination="@id/homeUtamaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeUtamaFragment"
+        android:name="org.d3if4062.stravel.ui.HomeUtamaFragment"
+        android:label="HomeUtamaFragment"
+        tools:layout="@layout/fragment_home_utama"/>
 </navigation>
