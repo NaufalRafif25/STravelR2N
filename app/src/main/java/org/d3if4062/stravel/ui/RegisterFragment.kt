@@ -6,8 +6,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import org.d3if4062.stravel.R
 import org.d3if4062.stravel.databinding.FragmentRegisterBinding
 
@@ -19,6 +24,20 @@ class RegisterFragment : Fragment() {
         binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
         binding.buttonRegister.setOnClickListener { register() }
         return binding.root
+
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        view.findViewById<TextView>(R.id.tv_login).setOnClickListener {
+            NavHostFragment.findNavController(this@RegisterFragment)
+                .navigate(R.id.action_registerFragment_to_loginFragment)
+
+
+
+
+        }
     }
 
     private fun register() {
