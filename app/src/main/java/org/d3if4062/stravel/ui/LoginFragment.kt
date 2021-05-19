@@ -18,26 +18,29 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("LoginFragment", "bagian login fragment error")
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
-        binding.buttonLogin.setOnClickListener { login() }
-        binding.buttonLogin.setOnClickListener { view: View-> view.findNavController().navigate(
-                if (login() == true) {
-                    R.id.action_loginFragment_to_homeUtamaFragment
-                }
-        ) }
+        binding.buttonLogin.setOnClickListener {
+            if (login()) {
+                view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
+            }
+        }
+//        binding.buttonLogin.setOnClickListener { view: View-> view.findNavController().navigate(
+//                    R.id.action_loginFragment_to_homeUtamaFragment
+//        ) }
         return binding.root
     }
 
-    private fun login() {
+    private fun login(): Boolean{
         val email = binding.editTextEmail.text.toString()
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(context, R.string.email_invalid, Toast.LENGTH_LONG).show()
-            return
+            return false
         }
 
         val password = binding.editTextPassword.text.toString()
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(context, R.string.password_invalid, Toast.LENGTH_LONG).show()
-            return
+            return false
         }
+        return true
     }
 }
