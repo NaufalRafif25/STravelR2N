@@ -4,7 +4,7 @@
     <string name="avatar">Avatar</string>
     <string name="keluar">Keluar</string>
     <string name="stravel">STravel</string>
-    <string name="email_invalid">Email tidak boleh kosong.</string>
+    <string name="email_invalid">field tidak boleh kosong.</string>
     <string name="password_invalid">Password tidak boleh kosong.</string>
     <string name="name_invalid">Nama tidak boleh kosong.</string>
 </resources>
