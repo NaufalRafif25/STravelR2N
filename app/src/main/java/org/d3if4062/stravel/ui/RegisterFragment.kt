@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import org.d3if4062.stravel.R
 import org.d3if4062.stravel.databinding.FragmentRegisterBinding
@@ -23,34 +24,35 @@ class RegisterFragment : Fragment() {
         Log.d("RegisterFragment", "bagian register fragment error")
         binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
         binding.buttonRegister.setOnClickListener { register() }
+        binding.buttonRegister.setOnClickListener {
+            if (register()) {
+                Toast.makeText(context, R.string.berhasil_register, Toast.LENGTH_LONG).show()
+                view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
+            }
+        }
+
         return binding.root
 
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.tv_login).setOnClickListener {
-            NavHostFragment.findNavController(this@RegisterFragment)
-                .navigate(R.id.action_registerFragment_to_loginFragment)
-        }
-    }
 
-    private fun register() {
+    private fun register(): Boolean {
         val name = binding.editTextName.text.toString()
         if (TextUtils.isEmpty(name)) {
             Toast.makeText(context, R.string.name_invalid, Toast.LENGTH_LONG).show()
-            return
+            return false
         }
 
         val email = binding.editTextEmail.text.toString()
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(context, R.string.email_invalid, Toast.LENGTH_LONG).show()
-            return
+            return false
         }
 
         val password = binding.editTextPassword.text.toString()
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(context, R.string.password_invalid, Toast.LENGTH_LONG).show()
-            return
+            return false
         }
+        return true
     }
 }

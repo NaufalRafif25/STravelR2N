@@ -21,6 +21,8 @@ class LoginFragment : Fragment() {
         binding.buttonLogin.setOnClickListener {
             if (login()) {
                 view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
+            } else {
+                Toast.makeText(context, R.string.berhasil_register, Toast.LENGTH_LONG).show()
             }
         }
 

@@ -7,4 +7,5 @@
     <string name="email_invalid">Email tidak boleh kosong.</string>
     <string name="password_invalid">Password tidak boleh kosong.</string>
     <string name="name_invalid">Nama tidak boleh kosong.</string>
+    <string name="berhasil_register">Berhasil Daftar!</string>
 </resources>
