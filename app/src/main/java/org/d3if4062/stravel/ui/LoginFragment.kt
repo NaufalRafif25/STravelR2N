@@ -23,6 +23,9 @@ class LoginFragment : Fragment() {
                 view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
             }
         }
+
+        binding.tvRegister.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_loginFragment_to_registerFragment) }
+
         return binding.root
     }
 
