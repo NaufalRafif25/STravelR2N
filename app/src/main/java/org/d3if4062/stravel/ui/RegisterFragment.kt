@@ -28,15 +28,9 @@ class RegisterFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         view.findViewById<TextView>(R.id.tv_login).setOnClickListener {
             NavHostFragment.findNavController(this@RegisterFragment)
                 .navigate(R.id.action_registerFragment_to_loginFragment)
-
-
-
-
         }
     }
 
@@ -55,7 +49,7 @@ class RegisterFragment : Fragment() {
 
         val password = binding.editTextPassword.text.toString()
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(context, R.string.email_invalid, Toast.LENGTH_LONG).show()
+            Toast.makeText(context, R.string.password_invalid, Toast.LENGTH_LONG).show()
             return
         }
     }
