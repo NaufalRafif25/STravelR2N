@@ -20,9 +20,8 @@ class LoginFragment : Fragment() {
         binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         binding.buttonLogin.setOnClickListener {
             if (login()) {
+                Toast.makeText(context, R.string.berhasil_login, Toast.LENGTH_LONG).show()
                 view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
-            } else {
-                Toast.makeText(context, R.string.berhasil_register, Toast.LENGTH_LONG).show()
             }
         }
 

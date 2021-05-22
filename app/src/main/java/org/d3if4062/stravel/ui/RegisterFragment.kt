@@ -23,13 +23,13 @@ class RegisterFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("RegisterFragment", "bagian register fragment error")
         binding = FragmentRegisterBinding.inflate(layoutInflater, container, false)
-        binding.buttonRegister.setOnClickListener { register() }
         binding.buttonRegister.setOnClickListener {
             if (register()) {
                 Toast.makeText(context, R.string.berhasil_register, Toast.LENGTH_LONG).show()
-                view?.findNavController()?.navigate(R.id.action_loginFragment_to_homeUtamaFragment)
+                view?.findNavController()?.navigate(R.id.action_registerFragment_to_loginFragment)
             }
         }
+        binding.tvLogin.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_registerFragment_to_loginFragment) }
 
         return binding.root
 

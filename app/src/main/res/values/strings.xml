@@ -8,4 +8,5 @@
     <string name="password_invalid">Password tidak boleh kosong.</string>
     <string name="name_invalid">Nama tidak boleh kosong.</string>
     <string name="berhasil_register">Berhasil Daftar!</string>
+    <string name="berhasil_login">Berhasil Login!</string>
 </resources>
