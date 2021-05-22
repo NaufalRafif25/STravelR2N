@@ -1,4 +1,4 @@
-package org.d3if4062.stravel
+package org.d3if4062.stravel.data
 
 data class TiketPesawat(
         val maskapai: String,
