@@ -21,7 +21,11 @@
         android:id="@+id/homeUtamaFragment"
         android:name="org.d3if4062.stravel.ui.HomeUtamaFragment"
         android:label="HomeUtamaFragment"
-        tools:layout="@layout/fragment_home_utama"/>
+        tools:layout="@layout/fragment_home_utama">
+        <action
+            android:id="@+id/action_homeUtamaFragment_to_homeTiketPesawatFragment"
+            app:destination="@id/homeTiketPesawatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="org.d3if4062.stravel.ui.RegisterFragment"
@@ -31,4 +35,9 @@
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/homeTiketPesawatFragment"
+        android:name="org.d3if4062.stravel.ui.HomeTiketPesawatFragment"
+        android:label="HomeTiketPesawatFragment"
+        tools:layout="@layout/fragment_home_tiket_pesawat"/>
 </navigation>
