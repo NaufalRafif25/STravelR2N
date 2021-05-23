@@ -13,10 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        buat tombol back
 //        navController = findNavController(R.id.myNavHostFragment)
 //        NavigationUI.setupActionBarWithNavController(this, navController)
     }
 
+//    tombol back
 //    override fun onSupportNavigateUp(): Boolean {
 //        return super.onSupportNavigateUp()
 //    }
