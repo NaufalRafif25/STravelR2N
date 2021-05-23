@@ -12,7 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-
+        app:srcCompat="@drawable/banner1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="@+id/button" />
 
     <Button
-        android:id="@+id/btn_pesawat"
+        android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,10 +63,10 @@
         android:layout_width="74dp"
         android:layout_height="76dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
-
+        android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/maskapai"/>
+        app:layout_constraintTop_toBottomOf="@id/maskapai"
+        app:srcCompat="@drawable/garuda" />
 
     <TextView
         android:id="@+id/textMaskapai"
@@ -118,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Lombok"
+        android:text="Jakarta"
         app:layout_constraintStart_toEndOf="@id/textTujuan"
         app:layout_constraintTop_toTopOf="@id/textTujuan"/>
 
@@ -138,7 +138,7 @@
         android:layout_height="85dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-
+        app:srcCompat="@drawable/hotel1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hotel"/>
 
