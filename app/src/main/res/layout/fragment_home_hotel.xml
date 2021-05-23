@@ -1,121 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tiket Hotel" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="260dp"
-        android:layout_height="140dp"
-        app:srcCompat="@drawable/banner1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="90dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Hotel"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="127dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Paket Wisata"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="106dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="60dp"
-        android:text="Tiket Pesawat"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
-
-    <TextView
-        android:id="@+id/hotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
-        android:text="Hotel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"/>
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="75dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@null"
         app:srcCompat="@drawable/hotel1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotel"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/judul"
+        app:layout_constraintTop_toBottomOf="@+id/judul"/>
 
     <TextView
-        android:id="@+id/textNamaHotel"
+        android:id="@+id/namaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
-        android:text="Nama Hotel :"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toTopOf="@id/imageView4"/>
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        tools:text="Hotel Grand Asrilia" />
 
     <TextView
-        android:id="@+id/textLokasi"
+        android:id="@+id/lokasiHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Lokasi"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textNamaHotel"/>
+        android:layout_marginBottom="16dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/namaHotel"
+        app:layout_constraintTop_toBottomOf="@+id/namaHotel"
+        tools:text="Bandung" />
 
     <TextView
-        android:id="@+id/textHargaHotel"
+        android:id="@+id/hargaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Harga"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textLokasi"/>
+        android:layout_marginBottom="16dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lokasiHotel"
+        app:layout_constraintTop_toBottomOf="@+id/lokasiHotel"
+        tools:text="Rp1,000,000/kamar/malam" />
 
-    <TextView
-        android:id="@+id/editTextNamaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Grand Lombok"
-        app:layout_constraintStart_toEndOf="@id/textNamaHotel"
-        app:layout_constraintTop_toTopOf="@id/textNamaHotel"/>
 
-    <TextView
-        android:id="@+id/editTextLokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Lombok"
-        app:layout_constraintStart_toEndOf="@id/textLokasi"
-        app:layout_constraintTop_toTopOf="@id/textLokasi" />
+<!--    <TextView-->
+<!--        android:id="@+id/hotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="Hotel"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/button"/>-->
 
-    <TextView
-        android:id="@+id/editTextHargaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Rp3,000,000/malam"
-        app:layout_constraintStart_toEndOf="@id/textHargaHotel"
-        app:layout_constraintTop_toTopOf="@id/textHargaHotel" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="85dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:srcCompat="@drawable/hotel1"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/hotel"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textNamaHotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Nama Hotel :"-->
+<!--        app:layout_constraintStart_toEndOf="@id/imageView4"-->
+<!--        app:layout_constraintTop_toTopOf="@id/imageView4"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textLokasi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Lokasi"-->
+<!--        app:layout_constraintStart_toEndOf="@id/imageView4"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textNamaHotel"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textHargaHotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Harga"-->
+<!--        app:layout_constraintStart_toEndOf="@id/imageView4"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textLokasi"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/editTextNamaHotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Grand Lombok"-->
+<!--        app:layout_constraintStart_toEndOf="@id/textNamaHotel"-->
+<!--        app:layout_constraintTop_toTopOf="@id/textNamaHotel"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/editTextLokasi"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Lombok"-->
+<!--        app:layout_constraintStart_toEndOf="@id/textLokasi"-->
+<!--        app:layout_constraintTop_toTopOf="@id/textLokasi" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/editTextHargaHotel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="Rp3,000,000/malam"-->
+<!--        app:layout_constraintStart_toEndOf="@id/textHargaHotel"-->
+<!--        app:layout_constraintTop_toTopOf="@id/textHargaHotel" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
