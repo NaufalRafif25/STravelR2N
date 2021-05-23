@@ -1,6 +1,7 @@
 package org.d3if4062.stravel.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ class HomeHotelFragment: Fragment() {
     private lateinit var binding: FragmentHomeHotelBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        Log.d("HomeHotelFragment", "Jumlah data: " + getData().size)
         binding = FragmentHomeHotelBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
