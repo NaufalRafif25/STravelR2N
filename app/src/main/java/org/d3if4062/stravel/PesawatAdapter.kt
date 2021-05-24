@@ -4,17 +4,17 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import org.d3if4062.stravel.data.TiketPesawat
-import org.d3if4062.stravel.databinding.ListWisataBinding
+import org.d3if4062.stravel.databinding.ListPesawatBinding
 
 
 class  PesawatAdapter (private val data: List<TiketPesawat>) :
     RecyclerView.Adapter<PesawatAdapter.ViewHolder>() {
 
-        class ViewHolder(private val binding: ListWisataBinding) :
+        class ViewHolder(private val binding: ListPesawatBinding) :
                 RecyclerView.ViewHolder(binding.root) {
             fun bind(tiketPesawat: TiketPesawat) = with(binding) {
                 namaTextView.text = tiketPesawat.maskapai
-                hargatiket.text = tiketPesawat.lokasi
+                hargatiket.text = tiketPesawat.hargaTiketPesawat
                 tujuan.text = tiketPesawat.lokasi
                 imageView.setImageResource(tiketPesawat.imageResId)
             }
@@ -22,7 +22,7 @@ class  PesawatAdapter (private val data: List<TiketPesawat>) :
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val inflater = LayoutInflater.from(parent.context)
-            val binding = ListWisataBinding.inflate(inflater, parent, false)
+            val binding = ListPesawatBinding.inflate(inflater, parent, false)
             return ViewHolder(binding)
         }
 

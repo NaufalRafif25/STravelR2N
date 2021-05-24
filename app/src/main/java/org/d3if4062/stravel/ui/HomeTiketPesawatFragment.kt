@@ -27,8 +27,8 @@ class HomeTiketPesawatFragment: Fragment() {
     private fun getData(): List<TiketPesawat> {
         return listOf(
                 TiketPesawat("Garuda Indonesia", "Jakarta","1.500.000", R.drawable.garuda),
-                TiketPesawat("Lion Terbang", "Bali","1.200.00", R.drawable.lion),
-                TiketPesawat("Air Asia", "Singapore","800.00", R.drawable.airasia),
+                TiketPesawat("Lion Terbang", "Bali","1.200.000", R.drawable.lion),
+                TiketPesawat("Air Asia", "Singapore","800.000", R.drawable.airasia),
                 TiketPesawat("Batik Air", "Lombok","1.000.000", R.drawable.batik)
 
         )
