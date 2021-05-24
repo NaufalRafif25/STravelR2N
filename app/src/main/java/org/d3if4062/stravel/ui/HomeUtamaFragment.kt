@@ -19,7 +19,7 @@ class HomeUtamaFragment : Fragment() {
         Log.d("HomeUtamaFragment", "bagian home utama fragment error")
         binding = FragmentHomeUtamaBinding.inflate(layoutInflater, container, false)
         binding.btnPesawat.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_homeUtamaFragment_to_homeTiketPesawatFragment) }
-
+        binding.btnHotel.setOnClickListener { view: View -> view.findNavController().navigate(R.id.action_homeUtamaFragment_to_homeHotelFragment) }
         return binding.root
     }
 

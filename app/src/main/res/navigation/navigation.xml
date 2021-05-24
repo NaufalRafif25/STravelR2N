@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_homeUtamaFragment_to_homeTiketPesawatFragment"
             app:destination="@id/homeTiketPesawatFragment" />
+        <action
+            android:id="@+id/action_homeUtamaFragment_to_homeHotelFragment"
+            app:destination="@id/homeHotelFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -40,4 +43,9 @@
         android:name="org.d3if4062.stravel.ui.HomeTiketPesawatFragment"
         android:label="HomeTiketPesawatFragment"
         tools:layout="@layout/fragment_home_tiket_pesawat"/>
+    <fragment
+        android:id="@+id/homeHotelFragment"
+        android:name="org.d3if4062.stravel.ui.HomeHotelFragment"
+        android:label="HomeHotelFragment"
+        tools:layout="@layout/fragment_home_hotel"/>
 </navigation>

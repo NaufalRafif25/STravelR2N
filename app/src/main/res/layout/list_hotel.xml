@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
-        android:text="Maskapai :"
+        android:text="Nama Hotel :"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:text="Tujuan :"
+        android:text="Lokasi :"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textMaskapai" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Harga Tiket : Rp"
+        android:text="Harga  : Rp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/aa" />
 
@@ -53,24 +53,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:textSize="18sp"
-        android:textStyle="bold"
+
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toEndOf="@id/imageView"
          />
 
     <TextView
-        android:id="@+id/tujuan"
+        android:id="@+id/lokasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="4dp"
-        android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/aa"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
          />
 
     <TextView
-        android:id="@+id/hargatiket"
+        android:id="@+id/harga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

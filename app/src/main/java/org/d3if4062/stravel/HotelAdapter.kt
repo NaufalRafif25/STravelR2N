@@ -5,25 +5,25 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import org.d3if4062.stravel.data.TiketHotel
 import org.d3if4062.stravel.data.TiketPesawat
-import org.d3if4062.stravel.databinding.ListPesawatBinding
+import org.d3if4062.stravel.databinding.ListHotelBinding
 
 
-class  PesawatAdapter(private val data: List<TiketPesawat>) :
-    RecyclerView.Adapter<PesawatAdapter.ViewHolder>() {
+    class HotelAdapter (private val data: List<TiketHotel>) :
+            RecyclerView.Adapter<HotelAdapter.ViewHolder>() {
 
-        class ViewHolder(private val binding: ListPesawatBinding) :
+        class ViewHolder(private val binding: ListHotelBinding) :
                 RecyclerView.ViewHolder(binding.root) {
-            fun bind(tiketPesawat: TiketPesawat) = with(binding) {
-                namaTextView.text = tiketPesawat.maskapai
-                hargatiket.text = tiketPesawat.hargaTiketPesawat
-                tujuan.text = tiketPesawat.lokasi
-                imageView.setImageResource(tiketPesawat.imageResId)
+            fun bind(tiketHotel: TiketHotel) = with(binding) {
+                namaTextView.text = tiketHotel.namaHotel
+                lokasi.text = tiketHotel.lokasiHotel
+                harga.text = tiketHotel.hargaHotel
+                imageView.setImageResource(tiketHotel.imageResId)
             }
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val inflater = LayoutInflater.from(parent.context)
-            val binding = ListPesawatBinding.inflate(inflater, parent, false)
+            val binding = ListHotelBinding.inflate(inflater, parent, false)
             return ViewHolder(binding)
         }
 
@@ -35,5 +35,3 @@ class  PesawatAdapter(private val data: List<TiketPesawat>) :
             holder.bind(data[position])
         }
     }
-
-

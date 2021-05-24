@@ -54,68 +54,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button"/>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="75dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/hotel1"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotel"/>
+        app:layout_constraintTop_toBottomOf="@+id/hotel"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/list_pesawat" />
+    </ScrollView>
 
-    <TextView
-        android:id="@+id/textNamaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Nama Hotel :"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toTopOf="@id/imageView4"/>
-
-    <TextView
-        android:id="@+id/textLokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Lokasi"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textNamaHotel"/>
-
-    <TextView
-        android:id="@+id/textHargaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Harga"
-        app:layout_constraintStart_toEndOf="@id/imageView4"
-        app:layout_constraintTop_toBottomOf="@id/textLokasi"/>
-
-    <TextView
-        android:id="@+id/editTextNamaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Grand Lombok"
-        app:layout_constraintStart_toEndOf="@id/textNamaHotel"
-        app:layout_constraintTop_toTopOf="@id/textNamaHotel"/>
-
-    <TextView
-        android:id="@+id/editTextLokasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Lombok"
-        app:layout_constraintStart_toEndOf="@id/textLokasi"
-        app:layout_constraintTop_toTopOf="@id/textLokasi" />
-
-    <TextView
-        android:id="@+id/editTextHargaHotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Rp3,000,000/malam"
-        app:layout_constraintStart_toEndOf="@id/textHargaHotel"
-        app:layout_constraintTop_toTopOf="@id/textHargaHotel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
