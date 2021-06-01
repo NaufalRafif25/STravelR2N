@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.RecyclerView
 import org.d3if4062.stravel.R
 import org.d3if4062.stravel.data.TiketHotel
 import org.d3if4062.stravel.databinding.FragmentHomeHotelBinding
@@ -16,6 +18,11 @@ class HomeHotelFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("HomeHotelFragment", "Jumlah data: " + getData().size)
         binding = FragmentHomeHotelBinding.inflate(layoutInflater, container, false)
+//        with(binding.recyclerView) {
+//            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
+//            adapter = org.d3if4062.stravel.TiketHotelAdapter(getData())
+//            setHasFixedSize(true)
+//        }
         return binding.root
     }
 

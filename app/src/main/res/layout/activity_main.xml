@@ -10,4 +10,5 @@
     app:defaultNavHost="true"
     app:navGraph="@navigation/navigation"
     tools:context=".MainActivity"
-    tools:viewBindingIgnore="true" />
+    tools:viewBindingIgnore="true"
+    tools:listitem="@layout/fragment_home_hotel"/>

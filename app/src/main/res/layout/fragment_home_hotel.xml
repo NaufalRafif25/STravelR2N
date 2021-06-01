@@ -3,10 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerView"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:listitem="@layout/fragment_home_hotel">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
     <TextView
         android:id="@+id/judul"
@@ -18,7 +26,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Tiket Hotel" />
+        android:text="Tiket Hotel" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,7 +49,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@id/imageView"
-        tools:text="Hotel Grand Asrilia" />
+        android:text="Hotel Grand Asrilia" />
 
     <TextView
         android:id="@+id/lokasiHotel"
@@ -52,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/namaHotel"
         app:layout_constraintTop_toBottomOf="@+id/namaHotel"
-        tools:text="Bandung" />
+        android:text="Bandung" />
 
     <TextView
         android:id="@+id/hargaHotel"
@@ -63,7 +71,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/lokasiHotel"
         app:layout_constraintTop_toBottomOf="@+id/lokasiHotel"
-        tools:text="Rp1,000,000/kamar/malam" />
+        android:text="Rp1,000,000/kamar/malam" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--</androidx.recyclerview.widget.RecyclerView>-->
 
 
 <!--    <TextView-->
@@ -139,5 +150,3 @@
 <!--        android:text="Rp3,000,000/malam"-->
 <!--        app:layout_constraintStart_toEndOf="@id/textHargaHotel"-->
 <!--        app:layout_constraintTop_toTopOf="@id/textHargaHotel" />-->
-
-</androidx.constraintlayout.widget.ConstraintLayout>
