@@ -18,11 +18,11 @@ class HomeHotelFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("HomeHotelFragment", "Jumlah data: " + getData().size)
         binding = FragmentHomeHotelBinding.inflate(layoutInflater, container, false)
-//        with(binding.recyclerView) {
-//            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
-//            adapter = org.d3if4062.stravel.TiketHotelAdapter(getData())
-//            setHasFixedSize(true)
-//        }
+        with(binding.recyclerView) {
+            addItemDecoration(DividerItemDecoration(context, RecyclerView.VERTICAL))
+            adapter = org.d3if4062.stravel.TiketHotelAdapter(getData())
+            setHasFixedSize(true)
+        }
         return binding.root
     }
 
