@@ -4,5 +4,6 @@ data class PaketWisata(
         val tempat: String,
         val maskapai: String,
         val hotel: String,
-        val harga: String
+        val harga: String,
+        val imageResId: Int
 )
