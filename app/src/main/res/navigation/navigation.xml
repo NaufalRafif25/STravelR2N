@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_homeUtamaFragment_to_homePaketWisataFragment"
             app:destination="@id/homePaketWisataFragment" />
+        <action
+            android:id="@+id/action_homeUtamaFragment_to_profileUserFragment"
+            app:destination="@id/profileUserFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -56,4 +59,9 @@
         android:name="org.d3if4062.stravel.ui.HomePaketWisataFragment"
         android:label="HomePaketWisataFragment"
         tools:layout="@layout/fragment_home_paket_wisata"/>
+    <fragment
+        android:id="@+id/profileUserFragment"
+        android:name="org.d3if4062.stravel.ui.ProfileUserFragment"
+        android:label="ProfileUserFragment"
+        tools:layout="@layout/fragment_profile_user"/>
 </navigation>
