@@ -8,9 +8,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="260dp"
-        android:layout_height="140dp"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/banner1"
+        app:srcCompat="@drawable/diskon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
